@@ -38,13 +38,13 @@
   <p align="center">
     This project aims to create a website with CRUD (Create, Read, Update, Delete) functionality and registration/login features. The website will be built using HTML, CSS, native PHP, and Bootstrap.
 
-    The website will have several pages, including a homepage, and login/register pages. Users will be able to register for an account and log in to the site, allowing them to access the dashboard page and perform CRUD operations on their data. The dashboard page will display a table of the user's data, and they will be able to add, edit, and delete records as necessary.
+The website will have several pages, including a homepage, about page, contact page, dashboard page, and login/register pages. Users will be able to register for an account and log in to the site, allowing them to access the dashboard page and perform CRUD operations on their data. The dashboard page will display a table of the user's data, and they will be able to add, edit, and delete records as necessary.
 
-    The site will have a responsive design, using Bootstrap to ensure that it looks great on both desktop and mobile devices. Custom CSS will be used to style the site and make it visually appealing.
+The site will have a responsive design, using Bootstrap to ensure that it looks great on both desktop and mobile devices. Custom CSS will be used to style the site and make it visually appealing.
 
-    The site will also use native PHP to interact with a MySQL database, allowing for efficient storage and retrieval of user data. The registration/login features will use encryption to ensure that user passwords are kept secure.
+The site will also use native PHP to interact with a MySQL database, allowing for efficient storage and retrieval of user data. The registration/login features will use encryption to ensure that user passwords are kept secure.
 
-    Overall, this project aims to create a robust website with a variety of features, including CRUD functionality and registration/login capabilities, using a combination of HTML, CSS, native PHP, and Bootstrap.
+Overall, this project aims to create a robust website with a variety of features, including CRUD functionality and registration/login capabilities, using a combination of HTML, CSS, native PHP, and Bootstrap.
 
   </p>
 </div>
