@@ -76,7 +76,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+In this project, we will be creating a website that allows users to register, login, and perform CRUD (Create, Read, Update, and Delete) operations on data. The website will be built using HTML, CSS, Bootstrap, and PHP.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,31 +97,26 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+These instructions will help you set up a local copy of the project on your machine.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+1. A web server such as XAMPP or WAMP installed on your local machine.
+2. A text editor such as Visual Studio Code or Sublime Text.
+3. Knowledge of HTML, CSS, Bootstrap, and PHP.
+4. Basic knowledge of MySQL.
+5. A modern web browser such as Google Chrome or Mozilla Firefox.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+1. Clone the repository to your local machine using Git or download the ZIP file from GitHub.
+2. Extract the files to your preferred directory.
+3. Start your web server (e.g., XAMPP or WAMP) and ensure that it is running.
+4. Open your preferred text editor and navigate to the project directory.
+5. Edit the config.php file with your database credentials.
+6. Import the database.sql file to create the required database and tables.
+7. Launch your web browser and navigate to the project directory.
+8. You should see the homepage of the website.
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -131,7 +126,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Once the project is set up, you can register as a user, log in to your account, and start performing CRUD operations on the data. The website is intuitive to use and has built-in security features to ensure the safety of user data.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -142,11 +137,38 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Design UI
-    - [ ] Nested Feature
-- [ ] Entity Relationship Diagram
-- [ ] Crowfoot Diagram
-- [ ] Web Development
+
+- [ ] Planning
+    - [ ] Define project requirements
+    - [ ] Identify project goals and objectives
+    - [ ] Create a project plan and timeline
+
+- [ ] Design
+    - [ ] Design user interface (UI) for website
+    - [ ] Define website layout
+    - [ ] Select color scheme and typography
+    - [ ] Create wireframes and mockups
+    - [ ] Create a nested feature list to define user requirements and functionality
+
+- [ ] Database Design
+    - [ ] Develop an Entity Relationship Diagram (ERD) to define relationships between tables
+    - [ ] Create a Crowfoot diagram to represent data model and relationships
+
+- [ ] Development
+    - [ ] Set up a development environment
+    - [ ] Implement front-end of website using HTML, CSS, and Bootstrap
+    - [ ] Implement back-end of website using PHP and MySQL
+    - [ ] Implement login and registration functionality
+    - [ ] Implement CRUD operations for data management
+    - [ ] Implement user management functionality
+    - [ ] Add security features to prevent unauthorized access and ensure data integrity
+    - [ ] Test website for functionality and usability
+
+- [ ] Deployment
+    - [ ] Upload website files to a live server
+    - [ ] Create a database on the server and import data
+    - [ ] Configure server to run the website
+    - [ ] Launch website and verify functionality
 
 See the [open issues](https://github.com/Dreamvalian/Software-Engineering-E-Group/issues) for a full list of proposed features (and known issues).
 
@@ -219,7 +241,7 @@ Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](http
 [linkedin-url]: https://linkedin.com/in/hanifnugraha
 [product-screenshot]: images/screenshot.png
 
-[Developer.mozilla.org/en-US/docs/Web/HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=orange
+[Developer.mozilla.org/en-US/docs/Web/HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: Developer.mozilla.org/en-US/docs/Web/HTML
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
