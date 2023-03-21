@@ -1,7 +1,7 @@
 <?php
 
-include('layouts/header.php');
-include('layouts/svg.php');
+include('includes/header.php');
+include('includes/svg.php');
 
 ?>
 
@@ -38,6 +38,6 @@ include('layouts/svg.php');
 
 <?php
 
-include('layouts/footer.php');
+include('includes/footer.php');
 
 ?>

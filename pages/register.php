@@ -71,7 +71,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="../pages/pre.css" rel="stylesheet">
+    <link href="../pages/pages.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
