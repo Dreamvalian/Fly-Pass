@@ -117,7 +117,6 @@ These instructions will help you set up a local copy of the project on your mach
 6. Import the database.sql file to create the required database and tables.
 7. Launch your web browser and navigate to the project directory.
 8. You should see the homepage of the website.
-   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +205,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Hanif Nahriya Nugraha - [@twitter_handle](https://twitter.com/twitter_handle) - hanifnnugraha69@gmail.com
+Hanif Nahriya Nugraha - 162021003 - hanifnnugraha69@gmail.com
 
 Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](https://github.com/Dreamvalian/Software-Engineering-E-Group)
 
