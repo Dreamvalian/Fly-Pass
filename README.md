@@ -195,9 +195,9 @@ Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](http
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []() Laboratory Assistance
-* []()
-* []()
+* []() Laboratory Assistance - 162020016 AGUS TINUS TURNIP
+* []() Laboratory Assistance - 162020024 FAUZAN ADDIEN
+* []() Laboratory Assistance - 162020028 MUHAMMAD FAIZ HIMAWAN
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,11 +219,11 @@ Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](http
 [linkedin-url]: https://linkedin.com/in/hanifnugraha
 [product-screenshot]: images/screenshot.png
 
-[Developer.mozilla.org/en-US/docs/Web/HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[Developer.mozilla.org/en-US/docs/Web/HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=orange
 [HTML-url]: Developer.mozilla.org/en-US/docs/Web/HTML
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-[Developer.mozilla.org/en-US/docs/Web/CSS]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+[Developer.mozilla.org/en-US/docs/Web/CSS]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=light-blue
 [CSS-url]: Developer.mozilla.org/en-US/docs/Web/CSS
 [Php.net]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
 [PHP-url]: https://php.net
