@@ -79,7 +79,7 @@ Overall, this project aims to create a robust website with a variety of features
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](<https://www.figma.com/file/meqZJrBLx4Q7Ss9PIWLMKy/Software-Engineering-(P)---E-Group?node-id=33%3A2&t=gZIqyAl8vomYd5pR-1>)
 
 In this project, we will be creating a website that allows users to register, login, and perform CRUD (Create, Read, Update, and Delete) operations on data. The website will be built using HTML, CSS, Bootstrap, and PHP.
 
