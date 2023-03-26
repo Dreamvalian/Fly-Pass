@@ -151,7 +151,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [ ] Database Design
 
-  - [ ] Develop an Entity Relationship Diagram (ERD) to define relationships between tables
+  - [x] Develop an Entity Relationship Diagram (ERD) to define relationships between tables
   - [ ] Create a Crowfoot diagram to represent data model and relationships
 
 - [ ] Development
