@@ -135,17 +135,17 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [ ] Planning
+- [✓] Planning
 
-  - [ ] Define project requirements
-  - [ ] Identify project goals and objectives
-  - [ ] Create a project plan and timeline
+  - [✓] Define project requirements
+  - [✓] Identify project goals and objectives
+  - [✓] Create a project plan and timeline
 
 - [ ] Design
 
-  - [ ] Design user interface (UI) for website
-  - [ ] Define website layout
-  - [ ] Select color scheme and typography
+  - [✓] Design user interface (UI) for website
+  - [✓] Define website layout
+  - [✓] Select color scheme and typography
   - [ ] Create wireframes and mockups
   - [ ] Create a nested feature list to define user requirements and functionality
 
