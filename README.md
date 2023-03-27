@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Dreamvalian/Software-Engineering-E-Group">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Software-Engineering (P) - E Group</h3>
@@ -235,7 +235,7 @@ Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](http
 [license-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hanifnugraha
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: img/screenshot.png
 [developer.mozilla.org/en-us/docs/web/html]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [html-url]: Developer.mozilla.org/en-US/docs/Web/HTML
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
