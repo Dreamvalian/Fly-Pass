@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Dreamvalian/Software-Engineering-E-Group">
-    <img src="img/logo.svg" alt="Logo" width="80" height="80">
+    <img src="img/logo-white.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Software-Engineering (P) - E Group</h3>
