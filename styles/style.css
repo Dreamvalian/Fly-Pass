@@ -5,9 +5,11 @@
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -moz-osx-font-smoothing: grayscale;
-    --primary-color: #C5BCB1;
-    --secondary-color: #4F5E5B;
-    --tertiary-color: #6F8899;
+    --primary-color: #B45C5C;
+    --secondary-color: #CEA7A9;
+    --tertiary-color: #5F514F;
+    --accent-color: #8F0808;
+    --accent2-color: #3A3A5A;
     --warning-color: #FF9D00;
     --error-color: #FF5252;
     --success-color: #52ff55;
@@ -84,7 +86,7 @@ nav {
     padding: 2.5vw 3vw;
     box-sizing: border-box;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
-    position: fixed;
+    position: -webkit-sticky;
     z-index: 0;
     background-color: var(--white);
     color: var(--black);
@@ -166,3 +168,71 @@ a.nav-link:hover::before {
 /* 
 *Hero 
 */
+
+/* body {
+    background-image: url('../img/background-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+body {
+    background-image: url('../img/background-hero.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: left;
+    padding: 0 20vh;
+}
+
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 0 30px;
+}
+
+.right-hero {
+    flex: 1;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+}
+
+form button[type="submit"],
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+form input[type="submit"]:hover,
+.btn-primary:hover {
+    background-color: var(--accent2-color);
+}
