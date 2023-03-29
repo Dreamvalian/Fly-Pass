@@ -19,8 +19,8 @@
             </form>
 
             <div class="text-end">
-                <a href="./pages/login.php"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
-                <a href="./pages/register.php"><button type="button" class="btn btn-warning">Sign-up</button></a>
+                <a href="./pages/login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                <a href="./pages/register.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
 
             </div>
         </div>
