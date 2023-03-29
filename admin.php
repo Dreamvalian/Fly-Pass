@@ -7,7 +7,7 @@ $result = mysqli_query($conn, $sql);
 
 
 if (!isset($_SESSION['logged_in'])) {
-    header('location:pages/login.hmtl');
+    header('location:pages/login.php');
     exit;
 }
 
@@ -15,7 +15,7 @@ if (isset($_GET['logout'])) {
     if (isset($_SESSION['logged_in'])) {
         unset($_SESSION['logged_in']);
         unset($_SESSION['user_email']);
-        header('location:pages/login.html');
+        header('location:pages/login.php');
         exit;
     }
 }
