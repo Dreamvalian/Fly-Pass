@@ -15,7 +15,7 @@ if (isset($_GET['logout'])) {
     if (isset($_SESSION['logged_in'])) {
         unset($_SESSION['logged_in']);
         unset($_SESSION['user_email']);
-        header('location:pages/login.php');
+        header('location:pages/login.html');
         exit;
     }
 }
@@ -32,7 +32,7 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-    <a href="pages/login.php?logout=1">logout</a>
+    <a href="pages/login.html?logout=1">logout</a>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -40,26 +40,26 @@ if (isset($_GET['logout'])) {
             <div class="col">
                 <section>
                     <table class="table">
-                        <thead class="thead-dark">
+                        <thead class="table-dark">
                             <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th class="text-center" scope="col">ID</th>
+                                <th class="text-center" scope="col">name</th>
+                                <th class="text-center" scope="col">Email</th>
+                                <th class="text-center" scope="col">Handle</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php while ($row = mysqli_fetch_assoc($result)) { ?>
 
                                 <tr>
-                                    <td><?php echo $row['id_user'] ?></td>
-                                    <td><?php echo $row['full_name'] ?></td>
-                                    <td><?php echo $row['email'] ?></td>
+                                    <td class="text-center"><?php echo $row['id_user'] ?></td>
+                                    <td class="text-center"><?php echo $row['full_name'] ?></td>
+                                    <td class="text-center"><?php echo $row['email'] ?></td>
                                     <td>
                                         <button class="btn-delete"><a class="delete" href="actions/delete.php?id=<?php echo $row['id_user']; ?>" role="button" onclick="return confirm('Data ini akan dihapus')">Hapus</a></button>
                                     </td>
                                     <td>
-                                        <button class="btn-update"><a class="update" href="actions/update.php?id=<?php echo $row['id_user']; ?>">Update</a></button>
+                                        <button><a href="pages/update.php?id=<?php echo $row['id_user']; ?>">Update</a></button>
                                     </td>
                                 </tr>
 
