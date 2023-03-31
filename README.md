@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Dreamvalian/Software-Engineering-E-Group">
-    <img src="img/logo-white.svg" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Software-Engineering (P) - E Group</h3>
@@ -135,23 +135,23 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [x] Planning
+- [ ] Planning
 
-  - [x] Define project requirements
-  - [x] Identify project goals and objectives
-  - [x] Create a project plan and timeline
+  - [ ] Define project requirements
+  - [ ] Identify project goals and objectives
+  - [ ] Create a project plan and timeline
 
 - [ ] Design
 
-  - [x] Design user interface (UI) for website
-  - [x] Define website layout
-  - [x] Select color scheme and typography
+  - [ ] Design user interface (UI) for website
+  - [ ] Define website layout
+  - [ ] Select color scheme and typography
   - [ ] Create wireframes and mockups
   - [ ] Create a nested feature list to define user requirements and functionality
 
 - [ ] Database Design
 
-  - [x] Develop an Entity Relationship Diagram (ERD) to define relationships between tables
+  - [ ] Develop an Entity Relationship Diagram (ERD) to define relationships between tables
   - [ ] Create a Crowfoot diagram to represent data model and relationships
 
 - [ ] Development
@@ -235,7 +235,7 @@ Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](http
 [license-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hanifnugraha
-[product-screenshot]: img/screenshot.png
+[product-screenshot]: images/screenshot.png
 [developer.mozilla.org/en-us/docs/web/html]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [html-url]: Developer.mozilla.org/en-US/docs/Web/HTML
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
