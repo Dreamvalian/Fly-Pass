@@ -9,6 +9,6 @@ $fullname = $_POST['fullname'];
 $q = "INSERT INTO user values ('','$username','$password','$fullname','$email','employee')";
 mysqli_query($conn, $q);
 
-header("location:../pages/register.php");
+header("location:../pages/register.html");
 
 die();

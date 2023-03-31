@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include('server/connection.php');
 @include 'includes/header.php';
@@ -14,7 +15,6 @@ if (isset($_POST['search'])) {
 }
 
 $result = mysqli_query($conn, $q);
-
 
 ?>
 
@@ -85,6 +85,7 @@ $result = mysqli_query($conn, $q);
 
 
     <!-- Search -->
+
     <section class="search">
         <div class="search">
             <form method="POST" class="search-item">

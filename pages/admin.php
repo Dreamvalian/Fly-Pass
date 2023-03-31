@@ -1,13 +1,13 @@
 <?php
 session_start();
-include('./server/connection.php');
+include('../server/connection.php');
 
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn, $sql);
 
 
 if (!isset($_SESSION['logged_in'])) {
-    header('location:pages/login.php');
+    header('location:login.php');
     exit;
 }
 
@@ -15,7 +15,7 @@ if (isset($_GET['logout'])) {
     if (isset($_SESSION['logged_in'])) {
         unset($_SESSION['logged_in']);
         unset($_SESSION['user_email']);
-        header('location:pages/login.html');
+        header('location:login.html');
         exit;
     }
 }
@@ -24,7 +24,7 @@ if (isset($_GET['logout'])) {
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,7 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-    <a href="pages/login.html?logout=1">logout</a>
+    <a href="login.html?logout=1">logout</a>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -56,10 +56,10 @@ if (isset($_GET['logout'])) {
                                     <td class="text-center"><?php echo $row['full_name'] ?></td>
                                     <td class="text-center"><?php echo $row['email'] ?></td>
                                     <td>
-                                        <button class="btn-delete"><a class="delete" href="actions/delete.php?id=<?php echo $row['id_user']; ?>" role="button" onclick="return confirm('Data ini akan dihapus')">Hapus</a></button>
+                                        <button class="btn-delete"><a class="delete" href="../actions/delete.php?id=<?php echo $row['id_user']; ?>" role="button" onclick="return confirm('Data ini akan dihapus')">Hapus</a></button>
                                     </td>
                                     <td>
-                                        <button><a href="pages/update.php?id=<?php echo $row['id_user']; ?>">Update</a></button>
+                                        <button><a href="update.php?id=<?php echo $row['id_user']; ?>">Update</a></button>
                                     </td>
                                 </tr>
 
