@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Dreamvalian/Wine-Warehouse">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./img/logo-white.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Software-Engineering (P) - E Group</h3>
@@ -204,11 +204,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Hanif Nahriya Nugraha - 162021003 - hanifnnugraha69@gmail.com
-Ramdhan Mahfuzh - 162021027 - ramdhan.mahfuzh@mhs.itenas.ac.id
-Azzahra Candra Putri - 162021024 - azzahra.candra@mhs.itenas.ac.id
-Ageri Fernanda - 162021022 - ageri.fernanda@gmhs.itenas.ac.id
-Reihandi Putra Z - 162021017 - Reihandi.putra@mhs.itenas.ac.id
+Hanif Nahriya Nugraha - 162021003 - hanifnnugraha69@gmail.com<br/>
+Ramdhan Mahfuzh - 162021027 - ramdhan.mahfuzh@mhs.itenas.ac.id<br/>
+Azzahra Candra Putri - 162021024 - azzahra.candra@mhs.itenas.ac.id<br/>
+Ageri Fernanda - 162021022 - ageri.fernanda@gmhs.itenas.ac.id<br/>
+Reihandi Putra Z - 162021017 - Reihandi.putra@mhs.itenas.ac.id<br/>
 
 Project Link: [https://github.com/Dreamvalian/Wine-Warehouse](https://github.com/Dreamvalian/Wine-Warehouse)
 
@@ -239,7 +239,7 @@ Project Link: [https://github.com/Dreamvalian/Wine-Warehouse](https://github.com
 [license-url]: https://github.com/Dreamvalian/Wine-Warehouse/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hanifnugraha
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: /img/screenshot.png
 [developer.mozilla.org/en-us/docs/web/html]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [html-url]: Developer.mozilla.org/en-US/docs/Web/HTML
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
