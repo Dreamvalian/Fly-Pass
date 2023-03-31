@@ -9,8 +9,7 @@ $result = mysqli_query($conn, $sql);
 if (isset($_POST['search'])) {
     $keyword = $_POST['keyword'];
     $q = "SELECT * FROM wines WHERE name LIKE '%$keyword%' OR  type LIKE '%$keyword%'";
-} else if (isset($_POST['search'])) {
-    $keyword = $_POST['keyword'];
+} else {
     $q = "SELECT * FROM wines ";
 }
 
