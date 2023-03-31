@@ -1,5 +1,22 @@
 <?php
-@include 'includes/header.php'
+session_start();
+include('server/connection.php');
+@include 'includes/header.php';
+
+$sql = "SELECT * FROM  wines";
+$result = mysqli_query($conn, $sql);
+
+if (isset($_POST['search'])) {
+    $keyword = $_POST['keyword'];
+    $q = "SELECT * FROM wines WHERE name LIKE '%$keyword%' OR  type LIKE '%$keyword%'";
+} else if (isset($_POST['search'])) {
+    $keyword = $_POST['keyword'];
+    $q = "SELECT * FROM wines ";
+} 
+
+$result = mysqli_query($conn, $q);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -69,76 +86,33 @@
     <!-- Search -->
 
     <div class="search">
-        <form class="search-item">
+        <form method="POST" class="search-item">
             <div class="mb-3">
                 <label for="search" class="form-label">Search Item</label>
-                <input type="search" class="form-control">
+                <input type="search" name="keyword" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Search</button>
+            <button name="search" type="submit" class="btn btn-primary">Search</button>
         </form>
-        <div class="card-grid">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a><br>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a><br>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a><br>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a><br>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a><br>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a><br>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
 
+        <div class="card-grid">
+            <?php if ($result && mysqli_num_rows($result) > 0) {
+
+                while ($row = mysqli_fetch_assoc($result)) { ?>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row['name'] ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $row['type'] ?></h6>
+                            <p class="card-text"><?php echo $row['description'] ?></p>
+                            <h6 class="card-price"> <?php echo $row['price'] ?> </h6>
+                            <h6 class="card-quantity"><?php echo $row['quantity'] ?></h6>
+                        </div>
+                    </div>
+            <?php }
+            } else {
+                echo "no result found !";
+            } ?>
+
+        </div>
     </div>
 </body>
 
