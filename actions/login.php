@@ -25,9 +25,9 @@ if (isset($_POST['login'])) {
             $_SESSION['password'] = $password;
             header("location:../employee.php");
         } else {
-            header("location:../pages/login.php?=failed");
+            header("location:../pages/login.html?=failed");
         }
     } else {
-        header("location:../pages/login.php?=failed");
+        header("location:../pages/login.html?=failed");
     }
 }
