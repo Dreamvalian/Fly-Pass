@@ -329,3 +329,24 @@ form input[type="submit"]:hover,
     font-size: 16px;
     line-height: 1.5;
 }
+
+/* 
+*Search
+*/
+
+.search {
+    background-image: url('../img/background-search.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20vh;
+}
+
+.search .card {
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+}
