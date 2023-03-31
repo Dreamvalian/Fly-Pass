@@ -338,11 +338,11 @@ form input[type="submit"]:hover,
     background-image: url('../img/background-search.png');
     background-size: cover;
     background-position: center;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20vh;
+    padding: 5vh 20vh;
 }
 
 .search .card {
