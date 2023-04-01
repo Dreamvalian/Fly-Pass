@@ -2,7 +2,7 @@
 
 session_start();
 include('server/connection.php');
-@include 'includes/header.php';
+include 'includes/header.php';
 
 $sql = "SELECT * FROM  wines";
 $result = mysqli_query($conn, $sql);
