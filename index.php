@@ -88,7 +88,7 @@ $result = mysqli_query($conn, $q);
 
     <section class="search">
 
-        <form method="POST" class="search-item">
+        <form method="POST" class="search-item" action="<?php echo $_SERVER['PHP_SELF'] ?>#card-grid">
             <div class="mb-3">
                 <label for="search" class="form-label">Search Item</label>
                 <input type="search" name="keyword" class="form-control">
@@ -96,7 +96,7 @@ $result = mysqli_query($conn, $q);
             <button name="search" type="submit" class="btn btn-primary">Search</button>
         </form>
 
-        <div class="card-grid">
+        <div class="card-grid" id="card-grid">
             <?php if ($result && mysqli_num_rows($result) > 0) {
 
                 while ($row = mysqli_fetch_assoc($result)) { ?>
@@ -121,11 +121,15 @@ $result = mysqli_query($conn, $q);
                     <p>Looks like our vault doesn't have what you're looking for. Try again?</p>
                 </div>
             <?php } ?>
-
         </div>
-
     </section>
+    <!-- <script>
+        const searchForm = document.getElementById("search-form");
 
+        searchForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+        });
+    </script> -->
 </body>
 
 </html>
