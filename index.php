@@ -38,14 +38,12 @@ $result = mysqli_query($conn, $q);
             <h1>Vino Vault</h1>
             <h3>A Nectar of Truth - In Vino Veritas</h3>
 
-            <form class="search-item">
+            <form method="POST" class="search-item" action="<?php echo $_SERVER['PHP_SELF'] ?>#search-item-2">
                 <div class="mb-3">
                     <label for="search" class="form-label">Search Item</label>
-                    <input type="search" class="form-control">
+                    <input type="search" name="keyword" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-primary">Search</button>
-                <div id="search" class="form-text">We'll find out what we have in our vault!</div>
-
+                <button name="search" type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
         <div class="right-hero">
@@ -87,7 +85,7 @@ $result = mysqli_query($conn, $q);
     <!-- Search -->
     <section class="search">
 
-        <form method="POST" class="search-item" action="<?php echo $_SERVER['PHP_SELF'] ?>#card-grid">
+        <form method="POST" class="search-item" id="search-item-2" action="<?php echo $_SERVER['PHP_SELF'] ?>#search-item-2">
             <div class="mb-3">
                 <label for="search" class="form-label">Search Item</label>
                 <input type="search" name="keyword" class="form-control">
