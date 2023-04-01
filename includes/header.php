@@ -5,13 +5,13 @@
         <a class="navbar-brand" href="#">Vinovault</a>
         <ul class="nav-ul">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="../index.php">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Inventory</a>
+                <a class="nav-link" href="/pages/inventory.php">Inventory</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
