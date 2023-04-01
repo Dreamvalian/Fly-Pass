@@ -1,37 +1,37 @@
 <!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../pages/pages.css">
-    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
-    <title>Login</title>
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--<title>Login & Registration Form</title>-->
 </head>
 
 <body>
 
     <div class="container">
-
         <div class="forms">
-
-            <div class="carousel">
-                a
-            </div>
-
             <div class="form login">
-                <span class="title">Welcome back!</span><br />
-                <span class="subtitle">The faster you fill up, faster you get a wines.</span>
+                <span class="title">Login</span>
+
                 <form action="#">
                     <div class="input-field">
                         <input type="text" placeholder="Enter your email" required>
-                        <i class="bi bi-envelope"></i>
+                        <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
                         <input type="password" class="password" placeholder="Enter your password" required>
-                        <i class="bi bi-lock"></i>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
 
                     <div class="checkbox-text">
@@ -39,6 +39,8 @@
                             <input type="checkbox" id="logCheck">
                             <label for="logCheck" class="text">Remember me</label>
                         </div>
+
+                        <a href="#" class="text">Forgot password?</a>
                     </div>
 
                     <div class="input-field button">
@@ -59,16 +61,21 @@
 
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your username" required>
-                        <i class="bi bi-person"></i>
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
                         <input type="text" placeholder="Enter your email" required>
-                        <i class="bi bi-envelope"></i>
+                        <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
                         <input type="password" class="password" placeholder="Create a password" required>
-                        <i class="bi bi-lock"></i>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
 
                     <div class="checkbox-text">
@@ -92,7 +99,7 @@
         </div>
     </div>
 
-    <script src="../script.js"></script>
+    <!--<script src="script.js"></script>-->
 </body>
 
 </html>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 29, 2023 at 04:43 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.3.23
+-- Generation Time: Mar 31, 2023 at 06:41 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -120,7 +120,22 @@ CREATE TABLE `wines` (
 INSERT INTO `wines` (`id`, `name`, `type`, `description`, `quantity`, `price`, `created_at`, `updated_at`) VALUES
 (1, 'Chardonnay', 'white', 'A classic white wine with buttery flavors', 50, 20.99, '2023-03-27 21:59:50', '2023-03-27 21:59:50'),
 (2, 'Pinot Noir', 'red', 'A light and fruity red wine with notes of cherry', 75, 24.99, '2023-03-27 21:59:50', '2023-03-27 21:59:50'),
-(3, 'Cabernet Sauvignon', 'red', 'A full-bodied red wine with bold flavors of blackberry and spice', 100, 29.99, '2023-03-27 21:59:50', '2023-03-27 21:59:50');
+(3, 'Cabernet Sauvignon', 'red', 'A full-bodied red wine with bold flavors of blackberry and spice', 100, 29.99, '2023-03-27 21:59:50', '2023-03-27 21:59:50'),
+(4, 'Chardonnay', 'White', 'A full-bodied wine with notes of tropical fruit and vanilla.', 50, 25.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(5, 'Pinot Noir', 'Red', 'A light-bodied wine with notes of red fruit and spice.', 40, 29.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(6, 'Sauvignon Blanc', 'White', 'A crisp wine with notes of citrus and grass.', 35, 19.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(7, 'Cabernet Sauvignon', 'Red', 'A full-bodied wine with notes of black fruit and oak.', 45, 34.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(8, 'Merlot', 'Red', 'A medium-bodied wine with notes of black cherry and chocolate.', 30, 27.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(9, 'Zinfandel', 'Red', 'A robust wine with notes of blackberry and pepper.', 25, 31.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(10, 'Pinot Grigio', 'White', 'A light-bodied wine with notes of lemon and apple.', 55, 23.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(11, 'Syrah', 'Red', 'A bold wine with notes of blackberry and smoke.', 20, 39.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(12, 'Riesling', 'White', 'A sweet wine with notes of peach and honey.', 60, 21.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(13, 'Malbec', 'Red', 'A medium-bodied wine with notes of black fruit and tobacco.', 40, 32.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(14, 'Grenache', 'Red', 'A medium-bodied wine with notes of red fruit and spice.', 35, 28.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(15, 'Chianti', 'Red', 'A dry wine with notes of cherry and leather.', 30, 26.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(16, 'Sangria', 'Red', 'A fruity wine with notes of citrus and spice.', 15, 17.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(17, 'Tempranillo', 'Red', 'A medium-bodied wine with notes of black fruit and vanilla.', 25, 30.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22'),
+(18, 'Chenin Blanc', 'White', 'A sweet wine with notes of honey and pear.', 50, 24.99, '2023-03-31 23:29:22', '2023-03-31 23:29:22');
 
 --
 -- Indexes for dumped tables
@@ -178,7 +193,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `wines`
 --
 ALTER TABLE `wines`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Constraints for dumped tables
