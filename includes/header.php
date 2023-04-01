@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <nav>
         <a class="navbar-brand" href="#">Vinovault</a>
-        <ul>
+        <ul class="nav-ul">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
             </li>
