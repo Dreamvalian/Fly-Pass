@@ -7,7 +7,7 @@ $result = mysqli_query($conn, $sql);
 
 
 if (!isset($_SESSION['logged_in'])) {
-    header('location:login.php');
+    header('location:login.html');
     exit;
 }
 
@@ -49,21 +49,23 @@ if (isset($_GET['logout'])) {
                             </tr>
                         </thead>
                         <tbody>
-                            <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                            <?php while ($row = mysqli_fetch_assoc($result)) {
+                                if ($row['role'] == "employee") { ?>
 
-                                <tr>
-                                    <td class="text-center"><?php echo $row['id_user'] ?></td>
-                                    <td class="text-center"><?php echo $row['full_name'] ?></td>
-                                    <td class="text-center"><?php echo $row['email'] ?></td>
-                                    <td>
-                                        <button class="btn-delete"><a class="delete" href="../actions/delete.php?id=<?php echo $row['id_user']; ?>" role="button" onclick="return confirm('Data ini akan dihapus')">Hapus</a></button>
-                                    </td>
-                                    <td>
-                                        <button><a href="update.php?id=<?php echo $row['id_user']; ?>">Update</a></button>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td class="text-center"><?php echo $row['id_user'] ?></td>
+                                        <td class="text-center"><?php echo $row['full_name'] ?></td>
+                                        <td class="text-center"><?php echo $row['email'] ?></td>
+                                        <td>
+                                            <button class="btn-delete"><a class="delete" href="../actions/delete.php?id=<?php echo $row['id_user']; ?>" role="button" onclick="return confirm('Data ini akan dihapus')">Hapus</a></button>
+                                        </td>
+                                        <td>
+                                            <button><a href="update.php?id=<?php echo $row['id_user']; ?>">Update</a></button>
+                                        </td>
+                                    </tr>
 
-                            <?php } ?>
+                            <?php }
+                            } ?>
                         </tbody>
                     </table>
                 </section>
