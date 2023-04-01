@@ -83,7 +83,7 @@ if (isset($_POST['btn_update'])) {
                 <div class="rsth">
                   <span>Dont want Update?</span>
                 </div>
-                <a class="rsthcancel" href="../admin.php" role="button">Cancel it</a>
+                <a class="rsthcancel" href="../pages/admin.php" role="button">Cancel it</a>
               </form>
             </div>
           </div>
