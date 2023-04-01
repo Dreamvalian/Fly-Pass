@@ -24,3 +24,4 @@
         </div>
     </nav>
 </header>
+<script src="../js/bootstrap.min.js"></script>

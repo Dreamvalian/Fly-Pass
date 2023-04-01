@@ -127,6 +127,7 @@ $result = mysqli_query($conn, $q);
             event.preventDefault();
         });
     </script> -->
+    <script src="./js/bootstrap.js"></script>
 </body>
 
 </html>
