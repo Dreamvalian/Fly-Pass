@@ -18,7 +18,7 @@ if (isset($_POST['btn_update'])) {
 
   mysqli_query($conn, $q);
 
-  header('location:../admin.php');
+  header('location:../pages/admin.php');
 }
 ?>
 
