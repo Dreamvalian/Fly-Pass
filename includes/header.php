@@ -1,6 +1,4 @@
 <header>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <nav>
         <a class="navbar-brand" href="#">Vinovault</a>
         <ul class="nav-ul">
