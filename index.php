@@ -77,8 +77,26 @@ $result = mysqli_query($conn, $q);
             experience the benefits of VinoVault for yourself!
           </p><br>
         </div>
-        <img src="./img/about-image1.jpg">
+        <div class="about-image">
+          <div class="img-about">
+            <img src="./img/about-image1.jpg" alt="image-carousel-1">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image2.jpg" alt="image-carousel-2">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image3.jpg" alt="image-carousel-3">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image4.jpg" alt="image-carousel-4">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image5.jpg" alt="image-carousel-5">
+          </div>
+        </div>
+
       </div>
+    </div>
     </div>
   </section>
 
@@ -128,7 +146,7 @@ $result = mysqli_query($conn, $q);
             event.preventDefault();
         });
     </script> -->
-<!-- <script src="./js/bootstrap.js"></script> -->
+  <!-- <script src="./js/bootstrap.js"></script> -->
 </body>
 
 </html>
