@@ -126,6 +126,7 @@ a.nav-link {
   color: var(--black);
   transition: transform 0.2s ease;
 }
+
 a.nav-link:active {
   content: '';
   width: 100%;
