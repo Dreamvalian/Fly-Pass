@@ -23,11 +23,17 @@
           </span>
           <form method="POST" action="../actions/login.php">
             <div class="input-field">
-              <input type="text" placeholder="Enter your email" required />
+              <input
+                name="email"
+                type="text"
+                placeholder="Enter your email"
+                required
+              />
               <i class="bi bi-envelope"></i>
             </div>
             <div class="input-field">
               <input
+                name="password"
                 type="password"
                 class="password"
                 placeholder="Enter your password"
@@ -109,7 +115,7 @@
             </div>
 
             <div class="input-field button">
-              <input  type="submit" value="Signup" />
+              <input type="submit" value="Signup" />
             </div>
           </form>
 
