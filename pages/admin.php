@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('../server/connection.php');
+include 'includes/header.php';
 
 $sql = "SELECT * FROM user";
 $result = mysqli_query($conn, $sql);
