@@ -2,7 +2,7 @@
 
 session_start();
 include('server/connection.php');
-@include 'includes/header.php';
+include 'includes/header.php';
 
 $sql = "SELECT * FROM  wines";
 $result = mysqli_query($conn, $sql);
@@ -31,6 +31,7 @@ $result = mysqli_query($conn, $q);
 </head>
 
 <body>
+
 
   <!-- Hero -->
   <section class="hero" id="hero">
@@ -127,7 +128,7 @@ $result = mysqli_query($conn, $q);
             event.preventDefault();
         });
     </script> -->
-  <!-- <script src="./js/bootstrap.js"></script> -->
+<!-- <script src="./js/bootstrap.js"></script> -->
 </body>
 
 </html>
