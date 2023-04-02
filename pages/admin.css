@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&family=Share+Tech&display=swap');
+
+body{
+    background-color: #CEA7A9;
+}
+
+.container{
+    padding-bottom: 10%;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 20px black;
+    
+}
+
+table{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    position: relative;
+    margin-left: -50%;
+    width: 100%;
+    margin-top: 20%;
+}
+
+thead{
+    font-family: 'Open Sans', sans-serif;
+    background-color: beige;
+    text-align: center;
+}
+
+.lgt{
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+}

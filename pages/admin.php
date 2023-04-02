@@ -27,25 +27,26 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="../css/bootstrap.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../pages/admin.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    <a href="login.html?logout=1">logout</a>
+    <a class="lgt" href="login.html?logout=1">logout</a>
     <div class="container">
         <div class="row">
             <div class="col">
             </div>
             <div class="col">
                 <section>
-                    <table class="table">
-                        <thead class="table-dark">
+                    <table border="1">
+                        <thead>
                             <tr>
                                 <th class="text-center" scope="col">ID</th>
                                 <th class="text-center" scope="col">name</th>
                                 <th class="text-center" scope="col">Email</th>
-                                <th class="text-center" scope="col">Handle</th>
+                                <th colspan="2">Handle</th>
                             </tr>
                         </thead>
                         <tbody>
