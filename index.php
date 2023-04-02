@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include('server/connection.php');
 @include 'includes/header.php';
@@ -14,7 +15,6 @@ if (isset($_POST['search'])) {
 }
 
 $result = mysqli_query($conn, $q);
-
 
 ?>
 

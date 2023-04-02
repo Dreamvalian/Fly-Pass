@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div class="container">
 
         <div class="forms">
@@ -31,13 +30,13 @@
 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
+                            <input type="checkbox" id="logCheck" />
                             <label for="logCheck" class="text">Remember me</label>
                         </div>
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Login">
+                        <input name="login" type="submit" value="Login" />
                     </div>
                 </form>
 
@@ -52,29 +51,34 @@
             <div class="form signup">
                 <span class="title">Registration</span>
 
-                <form action="#">
+                <form method="POST" action="../actions/register.php">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your username" required>
+                        <input name="user_name" type="username" placeholder="Enter your username" required />
                         <i class="bi bi-person"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input name="full_name" type="fullname" placeholder="Enter your Full Name" required />
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <div class="input-field">
+                        <input name="user_email" type="email" placeholder="Enter your email" required />
                         <i class="bi bi-envelope"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
+                        <input name="user_password" type="password" class="password" placeholder="Create a password"
+                            required />
                         <i class="bi bi-lock"></i>
                     </div>
 
                     <div class="checkbox-text">
                         <div class="checkbox-content">
-                            <input type="checkbox" id="termCon">
+                            <input type="checkbox" id="termCon" />
                             <label for="termCon" class="text">I accepted all terms and conditions</label>
                         </div>
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Signup">
+                        <input type="submit" value="Signup" />
                     </div>
                 </form>
 

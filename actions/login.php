@@ -17,13 +17,12 @@ if (isset($_POST['login'])) {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
             $_SESSION['logged_in'] = true;
-
-            header("location:../admin.php");
+            header("location:../pages/admin.php");
             
         } else if ($data['role'] == "employee") {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            header("location:../employee.php");
+            header("location:../pages/employee.php");
         } else {
             header("location:../pages/login.html?=failed");
         }
