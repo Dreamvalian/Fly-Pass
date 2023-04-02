@@ -13,13 +13,12 @@ if (isset($_POST['login'])) {
 
 
         $data = mysqli_fetch_assoc($sql);
-        
+
         if ($data['role'] == "admin") {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
             $_SESSION['logged_in'] = true;
             header("location:../pages/admin.php");
-
         } else if ($data['role'] == "employee") {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
