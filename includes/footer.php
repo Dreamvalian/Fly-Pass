@@ -44,8 +44,8 @@
                 </h5>
                 <ul class="list-unstyled text-white">
                     <center>
-                        <li><a href="#" class="links">Home</a></li>
-                        <li><a href="#" class="links">About</a></li>
+                        <li><a href="<?php echo $_SERVER['PHP_SELF'] ?>#hero" class="links">Home</a></li>
+                        <li><a href="<?php echo $_SERVER['PHP_SELF'] ?>#about" class="links">About</a></li>
                         <li><a href="#" class="links">Inventory</a></li>
                 </ul>
             </div>
