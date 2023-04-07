@@ -2,7 +2,7 @@
 
 <header>
     <nav>
-        <a class="navbar-brand" href="#">Vinovault</a>
+        <a class="navbar-brand" href="/index.php">Vinovault</a>
         <ul class="nav-ul">
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>#hero">Home</a>
@@ -24,4 +24,4 @@
         </div>
     </nav>
 </header>
-<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
