@@ -173,3 +173,10 @@ a.nav-link:hover::before {
   margin: 2rem;
   padding: 2rem;
 }
+
+.button-inventory {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+  align-items: center;
+}

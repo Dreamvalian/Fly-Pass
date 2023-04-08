@@ -325,7 +325,7 @@ form input[type="submit"]:hover,
 }
 
 .img-about:hover {
-  flex: 3;
+  flex: 2.25;
 }
 
 .img-about:hover> :not(:hover) {

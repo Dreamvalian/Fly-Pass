@@ -52,7 +52,20 @@
             <label for="description" class="form-label">Description</label>
             <textarea class="form-control" id="form-description" rows="3"></textarea>
           </div>
-          <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+          <div class="button-inventory">
+            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CRUD
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Create</a></li>
+                <li><a class="dropdown-item" href="#">Update</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
         <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
           <div class="mb-3">
@@ -63,7 +76,19 @@
             <label for="description" class="form-label">Description</label>
             <textarea class="form-control" id="form-description" rows="3"></textarea>
           </div>
-          <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+          <div class="button-inventory">
+            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CRUD
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Create</a></li>
+                <li><a class="dropdown-item" href="#">Update</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="tab-pane fade" id="inventory" role="tabpanel" aria-labelledby="inventory-tab">
           <div class="mb-3">
@@ -78,12 +103,24 @@
             <label for="quantity" class="form-label">Quantity</label>
             <input type="number" class="form-control" id="form-quantity" placeholder="Quantity e.g 6">
           </div>
-          <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+          <div class="button-inventory">
+            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CRUD
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Create</a></li>
+                <li><a class="dropdown-item" href="#">Update</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="../js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>
