@@ -42,11 +42,11 @@
           </div>
           <div class="mb-3">
             <label for="quantity" class="form-label">Quantity</label>
-            <input type="number" class="form-control" id="form-quantity" placeholder="Quantity e.g 6">
+            <input type="number" class="form-control" id="form-quantity" min="0" placeholder="Quantity e.g 6">
           </div>
           <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" id="form-price" placeholder="Price e.g 29.99">
+            <input type="number" class="form-control" id="form-price" min="0" max="9999.99" step="0.01" placeholder="Price e.g $00.00">
           </div>
           <div class="mb-3">
             <label for="description" class="form-label">Description</label>
