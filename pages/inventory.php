@@ -30,45 +30,56 @@
           <button class="nav-link" id="inventory-tab" data-bs-toggle="tab" data-bs-target="#inventory" type="button" role="tab" aria-controls="inventory" aria-selected="false">Inventory</button>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="wine" role="tabpanel" aria-labelledby="wine-tab">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="form-name" placeholder="Wines name">
+      
+      <!-- wines input -->
+      <form method="POST" action="../actions/createwine.php">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="wine" role="tabpanel" aria-labelledby="wine-tab">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input name="winename" type="text" class="form-control" id="form-name" placeholder="Wines name">
+            </div>
+            <div class="mb-3">
+              <label for="type" class="form-label">Type</label>
+              <input name="typewine" type="text" class="form-control" id="form-type" placeholder="Type of wines">
+            </div>
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input name="quantitywine" type="number" class="form-control" id="form-quantity" placeholder="Quantity e.g 6">
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <input name="pricewine" type="price" class="form-control" id="form-price" placeholder="Price e.g 29.99">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea name="description" class="form-control" id="form-description" rows="3"></textarea>
+            </div>
+            <button name="Submitwine" type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <div class="mb-3">
-            <label for="type" class="form-label">Type</label>
-            <input type="text" class="form-control" id="form-type" placeholder="Type of wines">
+        </form>
+
+        <!-- location input -->
+        <form method="POST" action="../actions/createlocation.php">
+          <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+            <div class="mb-3">
+              <label for="rack-name" class="form-label">Rack Name</label>
+              <input name="rackname" type="text" class="form-control" id="form-name" placeholder="e.g A1">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea name="description" class="form-control" id="form-description" rows="3"></textarea>
+            </div>
+            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <div class="mb-3">
-            <label for="quantity" class="form-label">Quantity</label>
-            <input type="number" class="form-control" id="form-quantity" placeholder="Quantity e.g 6">
-          </div>
-          <div class="mb-3">
-            <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" id="form-price" placeholder="Price e.g 29.99">
-          </div>
-          <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="form-description" rows="3"></textarea>
-          </div>
-          <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-        </div>
-        <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-          <div class="mb-3">
-            <label for="rack-name" class="form-label">Rack Name</label>
-            <input type="text" class="form-control" id="form-name" placeholder="e.g A1">
-          </div>
-          <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="form-description" rows="3"></textarea>
-          </div>
-          <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-        </div>
-        <div class="tab-pane fade" id="inventory" role="tabpanel" aria-labelledby="inventory-tab">
-          <div class="mb-3">
-            <label for="wine-id" class="form-label">Wine ID</label>
-            <input type="number" class="form-control" id="form-id" placeholder="Wine IDs">
+        </form>
+
+        <!-- inventory input -->
+        <form action="../actions/createinventory.php">
+          <div class="tab-pane fade" id="inventory" role="tabpanel" aria-labelledby="inventory-tab">
+            <div class="mb-3">
+              <label for="wine-id" class="form-label">Wine ID</label>
+              <input type="number" class="form-control" id="form-id" placeholder="Wine IDs">
           </div>
           <div class="mb-3">
             <label for="location-id" class="form-label">Location ID</label>
@@ -80,6 +91,7 @@
           </div>
           <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
         </div>
+      </form>
       </div>
     </div>
   </div>
