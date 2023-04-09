@@ -1,5 +1,11 @@
 <?php
+include('../server/connection.php');
 @include '../includes/header.php';
+session_start();
+
+$sql = "select * from wines";
+$result = mysqli_query($conn, $sql);
+
 ?>
 
 <html lang="en">
@@ -48,14 +54,17 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Product A</td>
-                <td>Type A</td>
-                <td>10</td>
-                <td>$50.00</td>
-                <td>Description for Product A</td>
-                <td>
+              <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+
+                <tr>
+                  <td><?php echo $row['id'] ?></td>
+                  <td><?php echo $row['name'] ?></td>
+                  <td><?php echo $row['type'] ?></td>
+                  <td><?php echo $row['quantity'] ?></td>
+                  <td><?php echo $row['price'] ?></td>
+                  <td><?php echo $row['description'] ?></td>
+                  <td>
+                  <?php } ?>
                   <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#editWines">Edit</button>
 
                   <!-- Modal -->
@@ -120,8 +129,8 @@
                       </div>
                     </div>
                   </div>
-                </td>
-              </tr>
+                  </td>
+                </tr>
             </tbody>
           </table>
           <div class="button-inventory">
