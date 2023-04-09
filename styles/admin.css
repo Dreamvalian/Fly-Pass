@@ -69,8 +69,8 @@ body {
 }
 
 /* 
-*Tab
- */
+* Mains
+*/
 
 .cards {
   display: flex;
@@ -86,9 +86,17 @@ body {
   padding: 2rem;
 }
 
-.button-inventory {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0;
+.logout {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+tr,
+td,
+a {
+  text-decoration: none;
+  justify-content: center;
   align-items: center;
 }

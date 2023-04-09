@@ -69,26 +69,39 @@ body {
 }
 
 /* 
-*Tab
- */
+* Mains
+*/
 
-.cards {
+body {
+  background-image: url(../img/background-image-login2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
-  position: -webkit-sticky;
-  z-index: 0;
-  background-color: var(--white);
-  color: var(--black);
-  font-family: 'Open Sans', sans-serif;
-  margin: 2rem;
-  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
 }
 
-.button-inventory {
+.container {
+  position: relative;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.container .forms {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0;
   align-items: center;
+  width: 100%;
+  transition: height 0.2s ease;
+}
+
+.container .form {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--white);
+  transition: margin-left 0.18s ease;
 }
