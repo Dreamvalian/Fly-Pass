@@ -32,64 +32,71 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="wine" role="tabpanel" aria-labelledby="wine-tab">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="form-name" placeholder="Wines name">
-          </div>
-          <div class="mb-3">
-            <label for="type" class="form-label">Type</label>
-            <input type="text" class="form-control" id="form-type" placeholder="Type of wines">
-          </div>
-          <div class="mb-3">
-            <label for="quantity" class="form-label">Quantity</label>
-            <input type="number" class="form-control" id="form-quantity" min="0" placeholder="Quantity e.g 6">
-          </div>
-          <div class="mb-3">
-            <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" id="form-price" min="0" max="9999.99" step="0.01" placeholder="Price e.g $00.00">
-          </div>
-          <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="form-description" rows="3"></textarea>
-          </div>
-          <div class="button-inventory">
-            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CRUD
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Create</a></li>
-                <li><a class="dropdown-item" href="#">Update</a></li>
-                <li><a class="dropdown-item" href="#">Delete</a></li>
-              </ul>
-            </div>
-          </div>
 
-        </div>
-        <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-          <div class="mb-3">
-            <label for="rack-name" class="form-label">Rack Name</label>
-            <input type="text" class="form-control" id="form-name" placeholder="e.g A1">
-          </div>
-          <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea class="form-control" id="form-description" rows="3"></textarea>
-          </div>
-          <div class="button-inventory">
-            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CRUD
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Create</a></li>
-                <li><a class="dropdown-item" href="#">Update</a></li>
-                <li><a class="dropdown-item" href="#">Delete</a></li>
-              </ul>
+          <form method="POST" action="../actions/createwine.php">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input name="winename" type="text" class="form-control" id="form-name" placeholder="Wines name">
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="type" class="form-label">Type</label>
+              <input name="typewine" type="text" class="form-control" id="form-type" placeholder="Type of wines">
+            </div>
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input name="quantitywine" type="number" class="form-control" id="form-quantity" min="0" placeholder="Quantity e.g 6">
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <input name="pricewine" type="price" class="form-control" id="form-price" min="0" max="9999.99" step="0.01" placeholder="Price e.g $00.00">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea name="description" class="form-control" id="form-description" rows="3"></textarea>
+            </div>
+            <div class="button-inventory">
+              <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CRUD
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Create</a></li>
+                  <li><a class="dropdown-item" href="#">Update</a></li>
+                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </div>
         </div>
+        </form>
+
+        <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+          <form method="post" action="../actions/createlocation.php">
+
+            <div class="mb-3">
+              <label for="rack-name" class="form-label">Rack Name</label>
+              <input name="rackname" type="text" class="form-control" id="form-name" placeholder="e.g A1">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <textarea name="description" class="form-control" id="form-description" rows="3"></textarea>
+            </div>
+            <div class="button-inventory">
+              <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CRUD
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Create</a></li>
+                  <li><a class="dropdown-item" href="#">Update</a></li>
+                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </form>
+
         <div class="tab-pane fade" id="inventory" role="tabpanel" aria-labelledby="inventory-tab">
           <div class="mb-3">
             <label for="wine-id" class="form-label">Wine ID</label>
@@ -117,7 +124,7 @@
             </div>
           </div>
         </div>
-      </form>
+        </form>
       </div>
     </div>
   </div>
