@@ -16,6 +16,22 @@ login.addEventListener("click", () => {
 //     event.preventDefault();
 // });
 
-$('#exampleModalCenter').on('shown.bs.modal', function () {
-    $('#exampleModalCenter').trigger('focus')
-})
+
+const editButton = document.getElementById("editButton");
+const editModal = document.getElementById("editWines");
+const closeButton = document.querySelector(".btn-close");
+
+editButton.addEventListener("click", () => {
+    editModal.style.display = "block";
+});
+
+closeButton.addEventListener("click", () => {
+    editModal.style.display = "none";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        editModal.style.display = 'none';
+    }
+}
