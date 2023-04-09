@@ -97,8 +97,29 @@
                       </div>
                     </div>
                   </div>
-                  <button name="Submit" type="button" class="btn btn-outline-danger">
-                    <a class="delete" href="../actions/delete.php?id=<?php echo $row['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
+
+                  <button name="Delete" id="deleteWinesButton" type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteWines">Delete</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="deleteWines" tabindex="-1" aria-labelledby="deleteWines" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="deleteWines">Deleting wines?</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Are you absolutely sure you want to proceed with this action? </br>
+                            Once confirmed, this action cannot be undone.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
