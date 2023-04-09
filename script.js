@@ -15,3 +15,7 @@ login.addEventListener("click", () => {
 // searchForm.addEventListener("submit", (event) => {
 //     event.preventDefault();
 // });
+
+$('#exampleModalCenter').on('shown.bs.modal', function () {
+    $('#exampleModalCenter').trigger('focus')
+})
