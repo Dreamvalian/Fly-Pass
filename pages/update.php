@@ -8,14 +8,14 @@ $result = mysqli_query($conn, $sql);
 
 $row = mysqli_fetch_assoc($result);
 
-if (isset($_POST['btn_update'])) {
+if (isset($_POST['submit'])) {
   $username = $_POST['username'];
   $password = $_POST['password'];
   $fullname = $_POST['fullname'];
   $email = $_POST['email'];
   $role = $_POST['role'];
-  $q = "UPDATE user SET username ='$username' , password ='$password', full_name = '$fullname', email = '$email', role = '$role' where id_user ='$id'";
 
+  $q = "UPDATE user SET username ='$username' , password ='$password', full_name = '$fullname', email = '$email', role = '$role' where id_user ='$id'";
   mysqli_query($conn, $q);
 
   header('location:../pages/admin.php');
@@ -42,25 +42,25 @@ if (isset($_POST['btn_update'])) {
         <div class="form update">
           <span class="title">Employee Update Info</span><br />
           <span class="subtitle">IDs: <?php echo $row['id_user'] ?></span>
-          <form method="POST" action="../actions/update.php">
+          <form method="POST">
             <div class="input-field">
               <i class="bi bi-person"></i>
-              <input name="username" type="text" class="username" placeholder="<?php echo $row['username'] ?>">
+              <input name="username" type="text" class="username" value="<?php echo $row['username'] ?>">
 
             </div>
             <div class="input-field">
               <i class="bi bi-lock"></i>
-              <input name="password" type="password" class="password" placeholder="<?php echo $row['username'] ?>">
+              <input name="password" type="password" class="password" value="<?php echo $row['password'] ?>">
 
             </div>
             <div class="input-field">
               <i class="bi bi-person-vcard"></i>
-              <input name="fullname" type="text" class="fullname" placeholder="<?php echo $row['full_name'] ?>">
+              <input name="fullname" type="text" class="fullname" value="<?php echo $row['full_name'] ?>">
 
             </div>
             <div class="input-field">
               <i class="bi bi-envelope"></i>
-              <input name="email" type="text" class="email" placeholder="<?php echo $row['email'] ?>">
+              <input name="email" type="email" class="email" value="<?php echo $row['email'] ?>">
             </div>
 
             <div class="input-field">
