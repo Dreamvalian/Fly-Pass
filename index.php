@@ -22,8 +22,8 @@ $result = mysqli_query($conn, $q);
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,8 +77,26 @@ $result = mysqli_query($conn, $q);
             experience the benefits of VinoVault for yourself!
           </p><br>
         </div>
-        <img src="./img/about-image1.jpg">
+        <div class="about-image">
+          <div class="img-about">
+            <img src="./img/about-image1.jpg" alt="image-carousel-1">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image2.jpg" alt="image-carousel-2">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image3.jpg" alt="image-carousel-3">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image4.jpg" alt="image-carousel-4">
+          </div>
+          <div class="img-about">
+            <img src="./img/about-image5.jpg" alt="image-carousel-5">
+          </div>
+        </div>
+
       </div>
+    </div>
     </div>
   </section>
 

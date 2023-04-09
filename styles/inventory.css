@@ -28,7 +28,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.3s;
-  width: 100%;
 }
 
 *:focus {
@@ -84,8 +83,8 @@ nav {
   padding: 2.5vw 3vw;
   box-sizing: border-box;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
-  position: -webkit-sticky;
-  z-index: 0;
+  position: sticky;
+  z-index: 1;
   background-color: var(--white);
   color: var(--black);
   font-family: 'Open Sans', sans-serif;
@@ -122,8 +121,6 @@ a {
 
 a.nav-link {
   text-decoration: none;
-  position: relative;
-  display: inline-block;
   padding: 10px;
   color: var(--black);
   transition: transform 0.2s ease;
@@ -131,9 +128,6 @@ a.nav-link {
 
 a.nav-link:active {
   content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 1px;
   background-color: var(--black);
@@ -166,12 +160,9 @@ a.nav-link:hover::before {
 *Tab
  */
 
-
 .cards {
-  width: 100%;
-  height: 75%;
+  display: flex;
   flex-direction: column;
-  align-items: center;
   box-sizing: border-box;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
   position: -webkit-sticky;
@@ -179,66 +170,13 @@ a.nav-link:hover::before {
   background-color: var(--white);
   color: var(--black);
   font-family: 'Open Sans', sans-serif;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem;
+  padding: 2rem;
 }
 
-.tabs {
+.button-inventory {
   display: flex;
-
-}
-
-.tab-item {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin: 0 10px;
-  width: auto;
-
-}
-
-a.tab-link {
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  color: var(--black);
-}
-
-/* 
-*Footer 
-*/
-footer {
-  background-color: var(--black);
-}
-
-.text-primary {
-  color: var(--accent-color) !important;
-  text-decoration: none;
-}
-
-.contact {
-  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
   align-items: center;
-  justify-items: start;
-}
-
-.contact svg {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: var(--error-color);
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  gap: 2rem;
-  text-decoration: none;
-  list-style: none;
 }
