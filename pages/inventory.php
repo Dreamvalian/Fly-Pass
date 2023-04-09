@@ -17,9 +17,12 @@
 <body>
   <div class="container my-5">
     <h3 class="text-center">Input your item through the vault.</h3>
-    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid, soluta quasi velit ducimus accusamus id dolore odit, aut, repudiandae consequatur. Atque exercitationem quos consequuntur temporibus quisquam excepturi error ullam.</p>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid, soluta quasi velit
+      ducimus accusamus id dolore odit, aut, repudiandae consequatur. Atque exercitationem quos consequuntur temporibus
+      quisquam excepturi error ullam.</p>
 
     <div class="cards">
+      <!-- Tab -->
       <ul class="nav nav-tabs my-4 flex-wrap" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="wine-tab" data-bs-toggle="tab" data-bs-target="#wine" type="button" role="tab" aria-controls="wine" aria-selected="true">Wine</button>
@@ -27,109 +30,118 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">Location</button>
         </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="inventory-tab" data-bs-toggle="tab" data-bs-target="#inventory" type="button" role="tab" aria-controls="inventory" aria-selected="false">Inventory</button>
-        </li>
       </ul>
+      <!-- Tab -->
       <div class="tab-content" id="myTabContent">
+        <!-- Wines Tab -->
         <div class="tab-pane fade show active" id="wine" role="tabpanel" aria-labelledby="wine-tab">
+          <table class="table table-stripped">
+            <thead class>
+              <tr>
+                <th scope=" col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Product A</td>
+                <td>Type A</td>
+                <td>10</td>
+                <td>$50.00</td>
+                <td>Description for Product A</td>
+                <td>
+                  <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#editWines">Edit</button>
 
-          <form method="POST" action="../actions/createwine.php">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input name="winename" type="text" class="form-control" id="form-name" placeholder="Wines name">
-            </div>
-            <div class="mb-3">
-              <label for="type" class="form-label">Type</label>
-              <input name="typewine" type="text" class="form-control" id="form-type" placeholder="Type of wines">
-            </div>
-            <div class="mb-3">
-              <label for="quantity" class="form-label">Quantity</label>
-              <input name="quantitywine" type="number" class="form-control" id="form-quantity" min="0" placeholder="Quantity e.g 6">
-            </div>
-            <div class="mb-3">
-              <label for="price" class="form-label">Price</label>
-              <input name="pricewine" type="price" class="form-control" id="form-price" min="0" max="9999.99" step="0.01" placeholder="Price e.g $00.00">
-            </div>
-            <div class="mb-3">
-              <label for="description" class="form-label">Description</label>
-              <textarea name="description" class="form-control" id="form-description" rows="3"></textarea>
-            </div>
-            <div class="button-inventory">
-              <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  CRUD
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Create</a></li>
-                  <li><a class="dropdown-item" href="#">Update</a></li>
-                  <li><a class="dropdown-item" href="#">Delete</a></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        </form>
-
-        <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
-          <form method="post" action="../actions/createlocation.php">
-
-            <div class="mb-3">
-              <label for="rack-name" class="form-label">Rack Name</label>
-              <input name="rackname" type="text" class="form-control" id="form-name" placeholder="e.g A1">
-            </div>
-            <div class="mb-3">
-              <label for="description" class="form-label">Description</label>
-              <textarea name="description" class="form-control" id="form-description" rows="3"></textarea>
-            </div>
-            <div class="button-inventory">
-              <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  CRUD
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Create</a></li>
-                  <li><a class="dropdown-item" href="#">Update</a></li>
-                  <li><a class="dropdown-item" href="#">Delete</a></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        </form>
-
-        <div class="tab-pane fade" id="inventory" role="tabpanel" aria-labelledby="inventory-tab">
-          <div class="mb-3">
-            <label for="wine-id" class="form-label">Wine ID</label>
-            <input type="number" class="form-control" id="form-id" placeholder="Wine IDs">
-          </div>
-          <div class="mb-3">
-            <label for="location-id" class="form-label">Location ID</label>
-            <input type="number" class="form-control" id="form-id" placeholder="Location IDs">
-          </div>
-          <div class="mb-3">
-            <label for="quantity" class="form-label">Quantity</label>
-            <input type="number" class="form-control" id="form-quantity" placeholder="Quantity e.g 6">
-          </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="editWines" tabindex="-1" aria-labelledby="editWines" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="editWines">Edit Wines</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control" id="name" value="Product 1">
+                            </div>
+                            <div class="form-group">
+                              <label for="type">Type</label>
+                              <input type="text" class="form-control" id="type" value="Type A">
+                            </div>
+                            <div class="form-group">
+                              <label for="quantity">Quantity</label>
+                              <input type="number" class="form-control" id="quantity" value="10">
+                            </div>
+                            <div class="form-group">
+                              <label for="price">Price</label>
+                              <input type="text" class="form-control" id="price" value="$100">
+                            </div>
+                            <div class="form-group">
+                              <label for="description">Description</label>
+                              <textarea class="form-control" id="description">Description 1</textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button name="Submit" type="button" class="btn btn-outline-danger">
+                    <a class="delete" href="../actions/delete.php?id=<?php echo $row['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <div class="button-inventory">
-            <button name="Submit" type="submit" class="btn btn-primary">Submit</button>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CRUD
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Create</a></li>
-                <li><a class="dropdown-item" href="#">Update</a></li>
-                <li><a class="dropdown-item" href="#">Delete</a></li>
-              </ul>
-            </div>
+            <button name="Submit" type="submit" class="btn btn-primary">Create new Data</button>
           </div>
         </div>
-        </form>
+        <!-- Location Tab -->
+        <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+          <table class="table table-stripped">
+            <thead>
+              <tr>
+                <th scope=" col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Product A</td>
+                <td>Description for Product A</td>
+                <td>
+                  <button name="Submit" type="button" class="btn btn-outline-secondary">Edit</button>
+                  <button name="Submit" type="button" class="btn btn-outline-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="button-inventory">
+            <button name="Submit" type="submit" class="btn btn-primary">Create new Data</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- <script src="../js/bootstrap.bundle.min.js"></script> -->
+    <script src="../script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
 
 </html>
