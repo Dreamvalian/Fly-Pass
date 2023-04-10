@@ -73,7 +73,7 @@ body {
 */
 
 body {
-  background-image: url(../img/background-image-login2.jpg);
+  background-image: url(../img/background-search.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -83,7 +83,15 @@ body {
   background-color: var(--secondary-color);
 }
 
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
 .container {
+  width: 100%;
   position: relative;
   background: var(--white);
   border-radius: 10px;

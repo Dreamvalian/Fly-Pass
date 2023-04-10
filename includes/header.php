@@ -1,15 +1,15 @@
 <header>
     <nav>
-        <a class="navbar-brand" href="/index.php">Vinovault</a>
+        <a class="navbar-brand" href="<?php echo $_SERVER['PHP_SELF'] ?>/../index.php">Vinovault</a>
         <ul class="nav-ul">
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>#hero">Home</a>
+                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>/../index.php#hero">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>#about">About</a>
+                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>/../index.php#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/inventory.php">Inventory</a>
+                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>/../pages/inventory.php">Inventory</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="pages/login.html">

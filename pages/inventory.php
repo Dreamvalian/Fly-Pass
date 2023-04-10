@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/layout.css">
   <link rel="stylesheet" href="../styles/inventory.css">
-  <title>Document</title>
+  <title>Inventory</title>
 </head>
 
 <body>
