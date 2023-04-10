@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
         } else if ($data['role'] == "employee") {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
-            header("location:../pages/employee.php");
+            header("location:../pages/inventory.php");
         } else {
             header("location:../pages/login.html?=failed");
         }

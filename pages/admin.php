@@ -31,20 +31,17 @@ if (isset($_GET['logout'])) {
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/layout.css">
   <link rel="stylesheet" href="../styles/admin.css">
-  <title>Document</title>
+  <title>Admin</title>
 </head>
 
 <body>
   <section>
     <div class="container my-5">
       <h3 class="text-center">Employee Management</h3>
-      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid, soluta quasi velit
-        ducimus accusamus id dolore odit, aut, repudiandae consequatur. Atque exercitationem quos consequuntur
-        temporibus quisquam excepturi error ullam.</p>
+      <p class="text-center">Manage your employees with ease and efficiency.</br>
+        Say goodbye to paperwork and hello to streamlined processes that save you time and money. Our platform is designed to help you stay organized and focused on what matters most - your business.</p>
       <div class="cards">
         <table class="table">
-          <a class="logout" href="login.html?logout=1">
-            <button type="button" class="btn btn-danger" href="login.html?logout=1">Logout</button>
           </a>
           <thead class="table-dark">
             <tr>
@@ -81,10 +78,11 @@ if (isset($_GET['logout'])) {
             } ?>
           </tbody>
         </table>
+        <button type="button" class="btn btn-secondary" href="login.html?logout=1">Logout</button>
+        <a class="logout" href="login.html?logout=1"></a>
       </div>
     </div>
   </section>
-
   <script src="../script.js"></script>
 </body>
 
