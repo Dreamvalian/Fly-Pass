@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
                 </div>
               </div>
               <div class="d-grid gap-2 mt-2">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
             <div class="mt-3 text-center">
