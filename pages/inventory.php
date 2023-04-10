@@ -6,6 +6,9 @@ session_start();
 $sql = "select * from wines";
 $result = mysqli_query($conn, $sql);
 
+$q = "select * from locations";
+$r = mysqli_query($conn, $q);
+
 ?>
 <html lang="en">
 
@@ -61,7 +64,6 @@ $result = mysqli_query($conn, $sql);
                   <td><?php echo $row['price'] ?></td>
                   <td><?php echo $row['description'] ?></td>
                   <td>
-
                     <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary">
                       <a href="update-data.php?id=<?php echo $row['id']; ?>">Edit</a></button>
                     <button name="delete" type="button" class="btn btn-outline-danger">
@@ -78,7 +80,7 @@ $result = mysqli_query($conn, $sql);
         <!-- Location Tab -->
         <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
           <table class="table table-stripped">
-            <thead>
+            <thead class>
               <tr>
                 <th scope=" col">ID</th>
                 <th scope="col">Name</th>
@@ -87,15 +89,19 @@ $result = mysqli_query($conn, $sql);
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Product A</td>
-                <td>Description for Product A</td>
-                <td>
-                  <button name="Submit" type="button" class="btn btn-outline-secondary">Edit</button>
-                  <button name="Submit" type="button" class="btn btn-outline-danger">Delete</button>
-                </td>
-              </tr>
+              <?php while ($rows = mysqli_fetch_assoc($r)) { ?>
+                <tr>
+                  <td><?php echo $rows['id'] ?></td>
+                  <td><?php echo $rows['name'] ?></td>
+                  <td><?php echo $rows['description'] ?></td>
+                  <td>
+                    <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary">
+                      <a href="update-data.php?id=<?php echo $rows['id']; ?>">Edit</a></button>
+                    <button name="delete" type="button" class="btn btn-outline-danger">
+                      <a class="delete" href="../actions/deletelocation.php?id=<?php echo $rows['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
+                  </td>
+                </tr>
+              <?php  } ?>
             </tbody>
           </table>
           <div class="button-inventory">

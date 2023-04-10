@@ -1,11 +1,6 @@
 <?php
 include('../server/connection.php');
 include('../includes/header.php');
-// wine-input //
-
-//create anchor balik ke inventory//
-//update sama create location//
-
 
 
 if (isset($_POST['create_wine'])) {
@@ -26,18 +21,32 @@ if (isset($_POST['create_wine'])) {
 }
 
 
+if (isset($_POST['create_location'])) {
+
+    $name = $_POST['name_location'];
+    $descriptionlocation = $_POST['description_location'];
+    $timestamps = time();
+    $datetime = date("Y-m-d H:i:s", $timestamps);
+
+    $q = "INSERT INTO locations values ('','$name','$descriptionlocation','$datetime','$datetime')";
+    mysqli_query($conn, $q);
+
+    header("location:inventory.php");
+}
+
+
 ?>
 
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/inventory.css">
-  <title>Create Inventory Data</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/inventory.css">
+    <title>Create Inventory Data</title>
 </head>
 
 <body>
@@ -59,50 +68,50 @@ if (isset($_POST['create_wine'])) {
             <div class="tab-content" id="myTabContent">
                 <!-- Wines Tab -->
                 <div class="tab-pane fade show active" id="wine" role="tabpanel" aria-labelledby="wine-tab">
-                    <form class="tab-body">
+                    <form method="POST" class="tab-body">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input name="winename" type="text" class="form-control" id="name" value="Product 1">
+                            <input name="winename" type="text" class="form-control" id="name" placeholder="Product Name">
                         </div>
                         <div class="form-group">
                             <label for="type">Type</label>
-                            <input name="typewine" type="text" class="form-control" id="type" value="Type A">
+                            <input name="typewine" type="text" class="form-control" id="type" placeholder="Wine Type">
                         </div>
                         <div class="form-group">
                             <label for="quantity">Quantity</label>
-                            <input name="quantitywine" type="number" class="form-control" id="quantity" value="10">
+                            <input name="quantitywine" type="number" class="form-control" id="quantity" placeholder="e.g 10">
                         </div>
                         <div class="form-group">
                             <label for="price">Price</label>
-                            <input name="pricewine" type="text" class="form-control" id="price" value="$100">
+                            <input name="pricewine" type="text" class="form-control" id="price" placeholder="e.g 35.55">
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea name="description" class="form-control" id="description">Description 1</textarea>
+                            <textarea name="description" class="form-control" id="description"></textarea>
+                        </div>
+                        <div class="tab-footer mt-3 d-flex justify-content-end gap-2">
+                            <button type="button" class="btn btn-secondary"><a href="inventory.php">Close</a></button>
+                            <button name="create_wine" type="submit" class="btn btn-primary">Input</button>
                         </div>
                     </form>
-                    <div class="tab-footer mt-3 d-flex justify-content-end gap-2">
-                        <button type="button" class="btn btn-secondary">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
                 </div>
                 <!-- Location Tab -->
                 <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
                     <table class="table table-stripped">
-                        <form class="tab-body">
+                        <form method="POST" class="tab-body">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" value="Product 1">
+                                <input name="name_location" type="text" class="form-control" id="name" placeholder="e.g A5">
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <textarea class="form-control" id="description">Description 1</textarea>
+                                <textarea name="description_location" class="form-control" id="description" placeholder="e.g First shelf on right side"></textarea>
+                            </div>
+                            <div class="tab-footer mt-3 d-flex justify-content-end gap-2">
+                                <button type="button" class="btn btn-secondary"><a href="inventory.php">Close</a></button>
+                                <button name="create_location" type="submit" class="btn btn-primary">Input</button>
                             </div>
                         </form>
-                        <div class="tab-footer mt-3 d-flex justify-content-end gap-2">
-                            <button type="button" class="btn btn-secondary">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
                 </div>
             </div>
         </div>
