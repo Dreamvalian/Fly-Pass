@@ -78,8 +78,7 @@ if (isset($_GET['logout'])) {
             } ?>
           </tbody>
         </table>
-        <button type="button" class="btn btn-secondary" href="login.html?logout=1">Logout</button>
-        <a class="logout" href="login.html?logout=1"></a>
+        <button type="button" class="btn btn-secondary"><a class="logout" href="login.html?logout=1">Logout</a></button>
       </div>
     </div>
   </section>
