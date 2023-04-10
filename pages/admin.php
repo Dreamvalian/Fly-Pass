@@ -31,7 +31,7 @@ if (isset($_GET['logout'])) {
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/layout.css">
   <link rel="stylesheet" href="../styles/admin.css">
-  <title>Document</title>
+  <title>Admin</title>
 </head>
 
 <body>
@@ -78,7 +78,7 @@ if (isset($_GET['logout'])) {
             } ?>
           </tbody>
         </table>
-        <button type="button" class="btn btn-danger" href="login.html?logout=1">Logout</button>
+        <button type="button" class="btn btn-secondary" href="login.html?logout=1">Logout</button>
         <a class="logout" href="login.html?logout=1"></a>
       </div>
     </div>

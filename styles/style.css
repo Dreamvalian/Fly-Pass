@@ -45,7 +45,7 @@ h6,
 p,
 a,
 label {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
   word-wrap: break-word;
   text-decoration: none;
   color: var(--black);
@@ -53,7 +53,7 @@ label {
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
@@ -207,7 +207,7 @@ body {
   padding: 2rem 0 2rem 0;
 }
 
-form button[type="submit"],
+/* form button[type="submit"],
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white);
@@ -218,9 +218,9 @@ form button[type="submit"],
   width: 100%;
   font-size: 18px;
   margin-bottom: 16px;
-  /* opacity: 0;
-  transition: .3s; */
-}
+  opacity: 0;
+  transition: .3s;
+} */
 
 /* form button:not(:placeholder-shown),
 form button[type="submit"] {
@@ -387,8 +387,9 @@ form input[type="submit"]:hover,
   font-size: 1.2rem;
 }
 
-.no-results-message svg {
+.no-results-message i {
   opacity: 50%;
+  font-size: 8rem;
 }
 
 /* 
