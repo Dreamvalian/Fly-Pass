@@ -1,7 +1,15 @@
 <?php
+include('../server/connection.php');
 @include '../includes/header.php';
-?>
+session_start();
 
+$sql = "select * from wines";
+$result = mysqli_query($conn, $sql);
+
+$q = "select * from locations";
+$r = mysqli_query($conn, $q);
+
+?>
 <html lang="en">
 
 <head>
@@ -11,15 +19,14 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/layout.css">
   <link rel="stylesheet" href="../styles/inventory.css">
-  <title>Document</title>
+  <title>Inventory</title>
 </head>
 
 <body>
   <div class="container my-5">
-    <h3 class="text-center">Input your item through the vault.</h3>
-    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid, soluta quasi velit
-      ducimus accusamus id dolore odit, aut, repudiandae consequatur. Atque exercitationem quos consequuntur temporibus
-      quisquam excepturi error ullam.</p>
+    <h3 class="text-center">Organize Your Wine Collection with Ease</h3>
+    <p class="text-center">Manage your wine collection like a pro with our secure and user-friendly Cellar Vault. </br>
+      Keep track of your finest vintages and enjoy them with confidence.</p>
 
     <div class="cards">
       <!-- Tab -->
@@ -48,69 +55,32 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Product A</td>
-                <td>Type A</td>
-                <td>10</td>
-                <td>$50.00</td>
-                <td>Description for Product A</td>
-                <td>
-                  <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#editWines">Edit</button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="editWines" tabindex="-1" aria-labelledby="editWines" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="editWines">Edit Wines</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="form-group">
-                              <label for="name">Name</label>
-                              <input type="text" class="form-control" id="name" value="Product 1">
-                            </div>
-                            <div class="form-group">
-                              <label for="type">Type</label>
-                              <input type="text" class="form-control" id="type" value="Type A">
-                            </div>
-                            <div class="form-group">
-                              <label for="quantity">Quantity</label>
-                              <input type="number" class="form-control" id="quantity" value="10">
-                            </div>
-                            <div class="form-group">
-                              <label for="price">Price</label>
-                              <input type="text" class="form-control" id="price" value="$100">
-                            </div>
-                            <div class="form-group">
-                              <label for="description">Description</label>
-                              <textarea class="form-control" id="description">Description 1</textarea>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button name="Submit" type="button" class="btn btn-outline-danger">
-                    <a class="delete" href="../actions/delete.php?id=<?php echo $row['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
-                </td>
-              </tr>
+              <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                <tr>
+                  <td><?php echo $row['id'] ?></td>
+                  <td><?php echo $row['name'] ?></td>
+                  <td><?php echo $row['type'] ?></td>
+                  <td><?php echo $row['quantity'] ?></td>
+                  <td><?php echo $row['price'] ?></td>
+                  <td><?php echo $row['description'] ?></td>
+                  <td>
+                    <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary">
+                      <a href="update-data.php?id=<?php echo $row['id']; ?>">Edit</a></button>
+                    <button name="delete" type="button" class="btn btn-outline-danger">
+                      <a class="delete" href="../actions/deletewine.php?id=<?php echo $row['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
+                  </td>
+                </tr>
+              <?php } ?>
             </tbody>
           </table>
           <div class="button-inventory">
-            <button name="Submit" type="submit" class="btn btn-primary">Create new Data</button>
+            <button name="Submit" type="submit" class="btn btn-primary"><a href="create-data.php">Create new Data</a></button>
           </div>
         </div>
         <!-- Location Tab -->
         <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
           <table class="table table-stripped">
-            <thead>
+            <thead class>
               <tr>
                 <th scope=" col">ID</th>
                 <th scope="col">Name</th>
@@ -119,15 +89,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Product A</td>
-                <td>Description for Product A</td>
-                <td>
-                  <button name="Submit" type="button" class="btn btn-outline-secondary">Edit</button>
-                  <button name="Submit" type="button" class="btn btn-outline-danger">Delete</button>
-                </td>
-              </tr>
+              <?php while ($rows = mysqli_fetch_assoc($r)) { ?>
+                <tr>
+                  <td><?php echo $rows['id'] ?></td>
+                  <td><?php echo $rows['name'] ?></td>
+                  <td><?php echo $rows['description'] ?></td>
+                  <td>
+                    <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary">
+                      <a href="update-data.php?id=<?php echo $rows['id']; ?>">Edit</a></button>
+                    <button name="delete" type="button" class="btn btn-outline-danger">
+                      <a class="delete" href="../actions/deletelocation.php?id=<?php echo $rows['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
+                  </td>
+                </tr>
+              <?php  } ?>
             </tbody>
           </table>
           <div class="button-inventory">

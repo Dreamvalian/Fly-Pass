@@ -49,6 +49,12 @@ a {
   font-weight: 600;
 }
 
+
+
+.navbar-brand {
+  font-weight: 600;
+}
+
 a.nav-link {
   text-decoration: none;
   padding: 10px;
@@ -85,6 +91,7 @@ a.nav-link:hover::before {
   transform: scaleX(1);
   transform-origin: bottom right;
 }
+
 
 /* 
 *Footer 
