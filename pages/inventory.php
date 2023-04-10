@@ -7,7 +7,6 @@ $sql = "select * from wines";
 $result = mysqli_query($conn, $sql);
 
 ?>
-
 <html lang="en">
 
 <head>
@@ -55,7 +54,6 @@ $result = mysqli_query($conn, $sql);
             </thead>
             <tbody>
               <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-
                 <tr>
                   <td><?php echo $row['id'] ?></td>
                   <td><?php echo $row['name'] ?></td>
@@ -64,77 +62,18 @@ $result = mysqli_query($conn, $sql);
                   <td><?php echo $row['price'] ?></td>
                   <td><?php echo $row['description'] ?></td>
                   <td>
-                  <?php } ?>
-                  <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#editWines">Edit</button>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="editWines" tabindex="-1" aria-labelledby="editWines" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="editWines">Edit Wines</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="form-group">
-                              <label for="name">Name</label>
-                              <input type="text" class="form-control" id="name" value="Product 1">
-                            </div>
-                            <div class="form-group">
-                              <label for="type">Type</label>
-                              <input type="text" class="form-control" id="type" value="Type A">
-                            </div>
-                            <div class="form-group">
-                              <label for="quantity">Quantity</label>
-                              <input type="number" class="form-control" id="quantity" value="10">
-                            </div>
-                            <div class="form-group">
-                              <label for="price">Price</label>
-                              <input type="text" class="form-control" id="price" value="$100">
-                            </div>
-                            <div class="form-group">
-                              <label for="description">Description</label>
-                              <textarea class="form-control" id="description">Description 1</textarea>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <button name="Delete" id="deleteWinesButton" type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteWines">Delete</button>
-                  <!-- Modal -->
-                  <div class="modal fade" id="deleteWines" tabindex="-1" aria-labelledby="deleteWines" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="deleteWines">Deleting wines?</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <p>
-                            Are you absolutely sure you want to proceed with this action? </br>
-                            Once confirmed, this action cannot be undone.
-                          </p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-danger">Delete</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    <button name="Edit" id="editWinesButton" type="button" class="btn btn-outline-secondary">
+                      <a href="update-data.php?id=<?php echo $row['id']; ?>">Edit</a></button>
+                    <button name="delete" type="button" class="btn btn-outline-danger">
+                      <a class="delete" href="../actions/deletewine.php?id=<?php echo $row['id']; ?>" role="button" onclick="return confirm('This data would be deleted?')">Delete</a></button>
                   </td>
                 </tr>
+              <?php } ?>
             </tbody>
           </table>
           <div class="button-inventory">
-            <button name="Submit" type="submit" class="btn btn-primary">Create new Data</button>
+            <button name="Submit" type="submit" class="btn btn-primary"><a href="create-data.php">Create new Data</a></button>
           </div>
         </div>
         <!-- Location Tab -->
