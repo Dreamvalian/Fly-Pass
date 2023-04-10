@@ -16,10 +16,9 @@
 
 <body>
   <div class="container my-5">
-    <h3 class="text-center">Input your item through the vault.</h3>
-    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid, soluta quasi velit
-      ducimus accusamus id dolore odit, aut, repudiandae consequatur. Atque exercitationem quos consequuntur temporibus
-      quisquam excepturi error ullam.</p>
+    <h3 class="text-center">Organize Your Wine Collection with Ease</h3>
+    <p class="text-center">Manage your wine collection like a pro with our secure and user-friendly Cellar Vault. </br>
+      Keep track of your finest vintages and enjoy them with confidence.</p>
 
     <div class="cards">
       <!-- Tab -->
