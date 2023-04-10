@@ -2,6 +2,9 @@
 include("../server/connection.php");
 include("../includes/header.php");
 
+//create anchor balik ke inventory//
+//update sama create location//
+
 session_start();
 
 if (isset($_POST['update'])) {
@@ -82,6 +85,7 @@ if (isset($_POST['update'])) {
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
+
                 <!-- Location Tab -->
                 <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
                     <table class="table table-stripped">
