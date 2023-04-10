@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&family=Share+Tech&display=swap");
+
+:root {
+  font-size: 16px !important;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #b45c5c;
+  --secondary-color: #cea7a9;
+  --tertiary-color: #5f514f;
+  --accent-color: #8f0808;
+  --accent2-color: #3a3a5a;
+  --warning-color: #ff9d00;
+  --error-color: #ff5252;
+  --success-color: #52ff55;
+  --white: #ffffff;
+  --black: #232323;
+  --grey: #aaaaaa;
+}
+
+/*
+ * Globals
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label {
+  font-family: "Open Sans", sans-serif;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: var(--black);
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*
+ * Base structure
+ */
+
+body {
+  background-color: #f8f9fd;
+}
+
+/* 
+*Tab
+ */
+
+body {
+  background-image: url("../img/background-inventory-admin.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  position: -webkit-sticky;
+  z-index: 0;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.button-inventory {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+  align-items: center;
+}

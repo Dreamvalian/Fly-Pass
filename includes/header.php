@@ -1,28 +1,25 @@
-<header class="p-3 text-bg-dark">
-    <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-            </a>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-            </ul>
-
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-            </form>
-
-            <div class="text-end">
-                <a href="./pages/login.php"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
-                <a href="./pages/register.php"><button type="button" class="btn btn-warning">Sign-up</button></a>
-
-            </div>
+<header>
+    <nav>
+        <a class="navbar-brand" href="<?php echo $_SERVER['PHP_SELF'] ?>/../index.php">Vinovault</a>
+        <ul class="nav-ul">
+            <li class="nav-item active">
+                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>/../index.php#hero">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>/../index.php#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] ?>/../pages/inventory.php">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
         </div>
-    </div>
+    </nav>
 </header>
+<script src="../js/bootstrap.bundle.min.js"></script>

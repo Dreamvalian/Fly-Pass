@@ -29,8 +29,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Dreamvalian/Software-Engineering-E-Group">
-    <img src="img/logo-white.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Dreamvalian/Wine-Warehouse">
+    <img src="./img/logo-white.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Software-Engineering (P) - E Group</h3>
@@ -141,24 +141,24 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [x] Identify project goals and objectives
   - [x] Create a project plan and timeline
 
-- [ ] Design
+- [x] Design
 
   - [x] Design user interface (UI) for website
   - [x] Define website layout
   - [x] Select color scheme and typography
-  - [ ] Create wireframes and mockups
-  - [ ] Create a nested feature list to define user requirements and functionality
+  - [x] Create wireframes and mockups
+  - [x] Create a nested feature list to define user requirements and functionality
 
-- [ ] Database Design
+- [x] Database Design
 
   - [x] Develop an Entity Relationship Diagram (ERD) to define relationships between tables
-  - [ ] Create a Crowfoot diagram to represent data model and relationships
+  - [x] Create a Crowfoot diagram to represent data model and relationships
 
-- [ ] Development
+- [x] Development
 
-  - [ ] Set up a development environment
-  - [ ] Implement front-end of website using HTML, CSS, and Bootstrap
-  - [ ] Implement back-end of website using PHP and MySQL
+  - [x] Set up a development environment
+  - [x] Implement front-end of website using HTML, CSS, and Bootstrap
+  - [x] Implement back-end of website using PHP and MySQL
   - [ ] Implement login and registration functionality
   - [ ] Implement CRUD operations for data management
   - [ ] Implement user management functionality
@@ -171,7 +171,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [ ] Configure server to run the website
   - [ ] Launch website and verify functionality
 
-See the [open issues](https://github.com/Dreamvalian/Software-Engineering-E-Group/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Dreamvalian/Wine-Warehouse/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,9 +204,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Hanif Nahriya Nugraha - 162021003 - hanifnnugraha69@gmail.com
+Hanif Nahriya Nugraha - 162021003 - hanifnnugraha69@gmail.com<br/>
+Ramdhan Mahfuzh - 162021027 - ramdhan.mahfuzh@mhs.itenas.ac.id<br/>
+Azzahra Candra Putri - 162021024 - azzahra.candra@mhs.itenas.ac.id<br/>
+Ageri Fernanda - 162021022 - ageri.fernanda@gmhs.itenas.ac.id<br/>
+Reihandi Putra Z - 162021017 - Reihandi.putra@mhs.itenas.ac.id<br/>
 
-Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](https://github.com/Dreamvalian/Software-Engineering-E-Group)
+Project Link: [https://github.com/Dreamvalian/Wine-Warehouse](https://github.com/Dreamvalian/Wine-Warehouse)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,19 +227,19 @@ Project Link: [https://github.com/Dreamvalian/Software-Engineering-E-Group](http
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Dreamvalian/Software-Engineering-E-Group.svg?style=for-the-badge
-[contributors-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Dreamvalian/Software-Engineering-E-Group.svg?style=for-the-badge
-[forks-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/network/members
-[stars-shield]: https://img.shields.io/github/stars/Dreamvalian/Software-Engineering-E-Group.svg?style=for-the-badge
-[stars-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Dreamvalian/Software-Engineering-E-Group.svg?style=for-the-badge
-[issues-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/issues
-[license-shield]: https://img.shields.io/github/license/Dreamvalian/Software-Engineering-E-Group.svg?style=for-the-badge
-[license-url]: https://github.com/Dreamvalian/Software-Engineering-E-Group/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Dreamvalian/Wine-Warehouse.svg?style=for-the-badge
+[contributors-url]: https://github.com/Dreamvalian/Wine-Warehouse/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Dreamvalian/Wine-Warehouse.svg?style=for-the-badge
+[forks-url]: https://github.com/Dreamvalian/Wine-Warehouse/network/members
+[stars-shield]: https://img.shields.io/github/stars/Dreamvalian/Wine-Warehouse.svg?style=for-the-badge
+[stars-url]: https://github.com/Dreamvalian/Wine-Warehouse/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Dreamvalian/Wine-Warehouse.svg?style=for-the-badge
+[issues-url]: https://github.com/Dreamvalian/Wine-Warehouse/issues
+[license-shield]: https://img.shields.io/github/license/Dreamvalian/Wine-Warehouse.svg?style=for-the-badge
+[license-url]: https://github.com/Dreamvalian/Wine-Warehouse/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hanifnugraha
-[product-screenshot]: img/screenshot.png
+[product-screenshot]: /img/screenshot.png
 [developer.mozilla.org/en-us/docs/web/html]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [html-url]: Developer.mozilla.org/en-US/docs/Web/HTML
 [bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white

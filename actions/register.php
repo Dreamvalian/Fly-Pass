@@ -1,14 +1,14 @@
 <?php
 include('../server/connection.php');
 
-$username = $_POST['username'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$fullname = $_POST['fullname'];
+$username = $_POST['user_name'];
+$email = $_POST['user_email'];
+$password = $_POST['user_password'];
+$fullname = $_POST['full_name'];
 
 $q = "INSERT INTO user values ('','$username','$password','$fullname','$email','employee')";
 mysqli_query($conn, $q);
 
-header("location:../pages/register.php");
+header("location:../pages/login.html");
 
 die();
