@@ -1,9 +1,9 @@
 <?php
 
-session_start();
 include('server/connection.php');
 include 'includes/header.php';
 
+session_start();
 $sql = "SELECT * FROM  wines";
 $result = mysqli_query($conn, $sql);
 
